@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <textarea name="" id="text" cols="30" rows="10" onkeypress="return limite(10)"></textarea>
+    </form>
+
+    <script>
+        function limite(maxCar)
+        {
+            var elemento = document.getElementById("txt");
+            if(elemento.value.length >= maxCar)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
